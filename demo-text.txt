@@ -1,3 +1,4 @@
 - created readme and added description
 - created this file and adding any random texts or lines, to just fakingly simulate texts for pushing things or creating pr's and all.
 - testing commit 1 - main branch
+- checking out on branch dev now again
