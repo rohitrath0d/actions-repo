@@ -4,4 +4,5 @@
 - creating a new branch now and pusing it to it. (branch - solo)
 - pushing to mian branch - 
 pushing to solo branch - 02
+pushing to solo branch - 02
 pushing to dev branch - 02
