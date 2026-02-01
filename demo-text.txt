@@ -2,5 +2,7 @@
 - created this file and adding any random texts or lines, to just fakingly simulate texts for pushing things or creating pr's and all.
 - creating a new test commit 1 on main branch
 - creating a new branch now and pusing it to it. (branch - solo)
-- pushing to mian branch - 01
-- pushing to solo branch - 02
+- pushing to mian branch - 
+pushing to solo branch - 02
+pushing to solo branch - 02
+pushing to dev branch - 02
