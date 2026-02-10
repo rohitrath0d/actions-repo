@@ -6,3 +6,4 @@
 pushing to solo branch - 02
 pushing to dev branch - 02
 pushing to main branch
+error in redis with starting port 6379 - seems like docker has captured it coz it uses linux distribution via wsl
