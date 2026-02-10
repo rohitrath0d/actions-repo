@@ -7,3 +7,20 @@ pushing to solo branch - 02
 pushing to dev branch - 02
 pushing to main branch
 error in redis with starting port 6379 - seems like docker has captured it coz it uses linux distribution via wsl
+
+
+- Error solved:
+- The Problem:
+ - WinNAT (Windows Networking) reserved a range of ports that included 6379, blocking Docker from using it. This caused the "Access Forbidden" error.
+-The Solution:
+  - I manually forced Windows to release the port and then officially reserved it for Docker.
+- Commands used (as Admin):
+-> Remove stuck container: docker rm -f redis
+-> Stop network service: net stop winnat
+-> Reserve port 6379 for yourself:
+  - netsh int ipv4 add excludedportrange protocol=tcp startport=6379 numberofports=1
+  - Restart network service: net start winnat
+  - Start Redis: docker run -d --name redis -p 6379:6379 redis:7
+  - Check status: docker ps (Should now show 0.0.0.0:6379->6379/tcp)
+
+
